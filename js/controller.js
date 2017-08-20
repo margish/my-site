@@ -1,7 +1,38 @@
 var mainApp = angular.module("myApp", []);
 
-mainApp.controller('mkController', function ($scope) {
-    $scope.menuItems = ['HOME', 'PROFILE', 'SKILLS', 'EDUCATION', 'EXPERIENCE', 'CONTACT'];
+mainApp.controller('mkController', function ($scope, $location, $anchorScroll) {
+    $scope.menuItems = [
+        {
+            name: 'home',
+            ref: '#home',
+            class: ''
+        },
+        {
+            name: 'profile',
+            ref: '#profile',
+            class: ''
+        },
+        {
+            name: 'skills',
+            ref: '#skills',
+            class: ''
+        },
+        {
+            name: 'education',
+            ref: '#education',
+            class: ''
+        },
+        {
+            name: 'experience',
+            ref: '#home',
+            class: ''
+        },
+        {
+            name: 'contact',
+            ref: '#contact',
+            class: ''
+        },
+    ];
     $scope.socialLinks = [
         {
             name: 'linkedin',
@@ -121,4 +152,10 @@ mainApp.controller('mkController', function ($scope) {
             to: 'Feb 2008'
         },
     ];
+
+    $scope.scrollTo = function (ref) {
+        console.log('ref 1', ref);
+        $location.hash(ref);
+        $anchorScroll();
+    };
 });

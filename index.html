@@ -18,16 +18,30 @@
 <body>
 
 <div ng-app="myApp" ng-controller="mkController">
-    <div class="row mk-menu">
-        <div class="col-sm-12">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="navbar-header">
-                    <a class="navbar-brand" ng-repeat="item in menuItems" href="#">{{item}}</a>
-                </div>
-            </nav>
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">Margish</a>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" id="main-menu">
+                    <li ng-repeat="item in menuItems" class="{{item.class}}"><a href="" ng-click="scrollTo(item.ref)">{{item.name}}</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+
     </div>
-    <section class="mk-page-header">
+
+    <section id="#home" class="mk-header">
         <header class="mk-header">
             <div class="row">
                 <div class="col-sm-12">
@@ -48,7 +62,7 @@
         </header>
     </section>
 
-    <section class="mk-profile">
+    <section id="#profile" class="mk-profile">
         <div class="container">
             <header class="section-header">
                 <h2 class="section-title">Professional Profile</h2>
@@ -105,7 +119,7 @@
         </div>
     </section>
 
-    <section class="mk-skills">
+    <section id="#skills" class="mk-skills">
         <div class="row">
             <div class="col-sm-12">
                 <high-chart options="chartOptions" width="100%">Skills Chart</high-chart>
@@ -113,7 +127,7 @@
         </div>
     </section>
 
-    <section class="mk-education">
+    <section id="#education" class="mk-education">
         <div class="container">
             <header class="section-header">
                 <h2 class="section-title"><span>Education</span></h2>
@@ -125,7 +139,7 @@
         </div>
     </section>
 
-    <section id="" class="mk-experience">
+    <section id="#experience" class="mk-experience">
         <div class="container">
             <header class="section-header">
                 <h2 class="section-title"><span>Experience</span></h2>

@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
     width: 100%;
 }
-/*.navbar-default {
+.navbar-default {
     background: rgba(255, 255, 255, 0.85);
     border: none;
     color: #777;
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     float: none;
     font-size: 1em;
     font-weight: bold;
-}*/
+}
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     background-color: transparent;
 }
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-mk-page-header {
+mk-header {
     width: 100%;
     /* height: 100%; */
     /* min-height: 100%; */
@@ -74,19 +74,19 @@ mk-page-header {
     /*background-size: cover;*/
     /*background: url(images/bhm-skyline.jpg) center center no-repeat;*/
 }
-mk-page-header header {
+mk-header header {
     color: #fff;
     padding-top: 20%;
 }
 
-.mk-page-header {
+.mk-header {
     width: 100%;
     position: relative;
     overflow: hidden;
     text-align: center;
 }
 
-.mk-page-header header h1 {
+.mk-header header h1 {
     margin: 0;
     padding: 0;
     font-size:  4em;
@@ -95,7 +95,7 @@ mk-page-header header {
     line-height: 1em;
     text-transform: uppercase;
 }
-.mk-page-header header p {
+.mk-header header p {
     font-size: 1.4em;
     display: inline-block;
     margin-bottom: 5px;
@@ -204,7 +204,6 @@ mk-page-header header {
     color: #fff;
     margin: 5px;
     background: none;
-    background-color: none;
     font-weight: bold;
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;

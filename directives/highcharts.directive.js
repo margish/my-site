@@ -9,7 +9,6 @@ mainApp.directive('highChart', function () {
                 options: '='
             },
             link: function (scope, element) {
-                console.log(element);
                 Highcharts.chart(element[0], {
                     chart: {
                         type: 'column',
