@@ -9,7 +9,7 @@ mainApp.directive('highChart', function () {
                 options: '='
             },
             link: function (scope, element) {
-                Highcharts.chart(element[0], {
+                var chart = Highcharts.chart(element[0], {
                     chart: {
                         type: 'column',
                         width: element[0].parentElement.offsetWidth,
@@ -17,12 +17,21 @@ mainApp.directive('highChart', function () {
                     title: {
                         text: ''
                     },
+                    legend: {
+                        enabled: false
+                    },
                     yAxis: {
                         tickInterval: 10,
                         title: '%'
                     },
                     xAxis: {
-                        categories: ['Java', 'SQL', 'Spring MVC', 'REST API', 'Java Script', 'Bootstrap', 'Angular', 'HTML', 'CSS', 'Hibernate']
+                        categories: ['Java', 'SQL', 'Spring MVC', 'REST API', 'Java Script', 'Bootstrap', 'Angular', 'HTML', 'CSS', 'Hibernate'],
+                        labels: {
+                            style: {
+                                "fontSize": "16px",
+                                "fontWeight": "bold"
+                            }
+                        }
                     },
                     credits: {
                         enabled: true
@@ -41,6 +50,14 @@ mainApp.directive('highChart', function () {
                         }
                     }
                 });
+
+                // resize chart width on window resize
+                $(window).resize(function() {
+                    var height = chart.height;
+                    var width = element[0].parentElement.offsetWidth;
+                    chart.setSize(width, height, true);
+                });
+
             }
         };
     });

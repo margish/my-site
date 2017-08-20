@@ -9,9 +9,13 @@ a:link,a:visited{
     color:#fff;
 }
 
-.spacer,.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus,#grid .mix .overlay {
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus,#grid .mix .overlay {
 
     background: #3498db;
+}
+
+.spacer {
+    background: #db3330;
 }
 
 .mk-contact{
