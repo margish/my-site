@@ -24,14 +24,14 @@ mainApp.controller('mkController', function ($scope, $location, $anchorScroll) {
         },
         {
             name: 'experience',
-            ref: '#home',
+            ref: '#experience',
             class: ''
         },
         {
             name: 'contact',
             ref: '#contact',
             class: ''
-        },
+        }
     ];
     $scope.socialLinks = [
         {

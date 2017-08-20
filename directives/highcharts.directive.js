@@ -15,7 +15,11 @@ mainApp.directive('highChart', function () {
                         width: element[0].parentElement.offsetWidth,
                     },
                     title: {
-                        text: 'Skills Chart'
+                        text: ''
+                    },
+                    yAxis: {
+                        tickInterval: 10,
+                        title: '%'
                     },
                     xAxis: {
                         categories: ['Java', 'SQL', 'Spring MVC', 'REST API', 'Java Script', 'Bootstrap', 'Angular', 'HTML', 'CSS', 'Hibernate']
@@ -25,7 +29,17 @@ mainApp.directive('highChart', function () {
                     },
                     series: [{
                         data: scope.options.data
-                    }]
+                    }],
+                    plotOptions: {
+                        series: {
+                            dataLabels: {
+                                enabled: true,
+                                formatter: function() {return this.y + '%'},
+                                inside: true
+                            },
+                            enableMouseTracking: false
+                        }
+                    }
                 });
             }
         };

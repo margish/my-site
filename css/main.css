@@ -122,20 +122,31 @@ mk-header header {
 }
 
 .mk-summary {
+    padding-top: 75px;
     margin-top: 10px;
     font-size: 1.1em;
 }
 
 .mk-skills {
-    background: #f7f7f7;
+    padding: 0;
+    background: #fff;
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
 }
 
+.mk-chart {
+    padding-top: 40px;
+}
+
 .mk-experience {
     padding: 75px 0;
     background: #f7f7f7;
+    text-align: center;
+}
+
+.experience {
+    padding-top: 20px;
 }
 
 .mk-education {
@@ -148,6 +159,7 @@ mk-header header {
     text-align: center;
 }
 .mk-contact .contact-info p {
+    padding-top: 50px;
     font-size: 1.2em;
 }
 
