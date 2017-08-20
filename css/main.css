@@ -1,0 +1,247 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    color: #757575;
+}
+img {
+    max-width: 100%;
+}
+a:link, a:visited {
+    outline: 0;
+}
+a:hover, a:active {
+    text-decoration: none;
+}
+a img {
+    border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
+
+.navbar {
+    width: 100%;
+}
+/*.navbar-default {
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    color: #777;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+}
+.navbar-nav {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    float: none;
+    font-size: 1em;
+    font-weight: bold;
+}*/
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    background: none;
+}
+
+.mk-menu nav{
+    margin-bottom: 0;
+}
+
+.mk-header {
+    width: 100%;
+    height: 500px;
+    background: url(../images/bhm-skyline.jpg) center center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+mk-page-header {
+    width: 100%;
+    /* height: 100%; */
+    /* min-height: 100%; */
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /*background-size: cover;*/
+    /*background: url(images/bhm-skyline.jpg) center center no-repeat;*/
+}
+mk-page-header header {
+    color: #fff;
+    padding-top: 20%;
+}
+
+.mk-page-header {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mk-page-header header h1 {
+    margin: 0;
+    padding: 0;
+    font-size:  4em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.mk-page-header header p {
+    font-size: 1.4em;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 0 8px;
+    letter-spacing: 0.1em;
+    line-height: 3em;
+    text-transform: uppercase;
+}
+
+.mk-header {
+    padding-top: 2%;
+}
+
+.mk-profile {
+    padding: 75px 0;
+    background: #fff;
+}
+.mk-profile .profile {
+    border: 3px solid #333;
+    width: 403px;
+    height: 275px;
+    margin: auto;
+    text-align: center;
+}
+
+.mk-summary {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.mk-skills {
+    background: #f7f7f7;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mk-experience {
+    padding: 75px 0;
+    background: #f7f7f7;
+}
+
+.mk-education {
+    padding: 75px 0;
+    background: #fff;
+}
+
+.mk-contact {
+    padding: 75px 0;
+    text-align: center;
+}
+.mk-contact .contact-info p {
+    font-size: 1.2em;
+}
+
+.section-header {
+    text-align: center;
+}
+.section-header p {
+    font-size: 1.5em;
+}
+.section-title {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #555555;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.spacer {
+    width: 100px;
+    height: 2px;
+    margin: auto;
+}
+.section-subtitle {
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+.social-icons .btn {
+    margin-right: 15px;
+}
+.social-icons {
+    padding-top: 10px;
+    margin-bottom: 35px;
+}
+.social-icons .btn.btn-clear {
+    border: 1px solid #fff;
+}
+.btn-round {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 0;
+}
+.btn-round i {
+    font-size: 20px;
+    top: 15px;
+    position: relative;
+}
+.btn.btn-clear {
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 5px;
+    background: none;
+    background-color: none;
+    font-weight: bold;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+.btn.btn-clear:hover, .btn.btn-clear.selected {
+    background: #fff;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+.btn-twitter:hover {
+    color: #2BA9E0;
+}
+.btn-facebook:hover {
+    color: #204385;
+}
+.btn-dribbble:hover {
+    color: #D92C85;
+}
+.btn-instagram:hover {
+    color: #BAB1A8;
+}
+.btn-linkedin:hover {
+    color: #015786;
+}
+.btn-pinterest:hover {
+    color: #CA2128;
+}
+.btn-google:hover {
+    color: #D3492C;
+}
+.btn-github:hover {
+    color: #030802;
+}

@@ -1,0 +1,169 @@
+<html>
+<head>
+    <title>Margish Kotadiya</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="lib/ui-bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/e5b7e5d672.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="directives/highcharts.directive.js"></script>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blue.css">
+</head>
+
+<body>
+
+<div ng-app="myApp" ng-controller="mkController">
+    <div class="row mk-menu">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand" ng-repeat="item in menuItems" href="#">{{item}}</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section class="mk-page-header">
+        <header class="mk-header">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="mk-header">
+                        <h1>MARGISH KOTADIYA</h1>
+                        <p>Full Stack Developer | Senior Java/J2EE Developer</p>
+                        <div>
+                            <a ng-repeat="item in socialLinks"
+                               href="{{item.link}}"
+                               class="{{item.class}}"
+                               target="_blank">
+                                <i class="{{item.icon}}"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <section class="mk-profile">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Professional Profile</h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">Sr. Full Stack Developer | Java/J2EE Developer</p>
+            </header>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="profile"><img src="images/profile.jpg" alt="profile" width="403px" height="269px">
+                    </div>
+                </div>
+            </div>
+            <div class="row mk-summary">
+                <div class="col-sm-12 well well-lg">
+                    <li><strong>Full stack Java developer</strong> with <strong>8 years</strong> of experience.</li>
+                    <li><strong>Spring MVC, Hibernate, Quartz</strong> and <strong>Log4j</strong> with <strong>Java
+                        8</strong>.
+                    </li>
+                    <li><strong>REST APIs</strong> and SOAP based <strong>web services</strong>.</li>
+                    <li><strong>Responsive HTML5</strong> apps using <strong>JavaScript, AngularJS, Bootstrap</strong>
+                        and <strong>CSS</strong>.
+                    </li>
+                    <li>Deployed <strong>REST APIs</strong> using <strong>Spring Boot</strong> to <strong>Amazon Web
+                        Services (AWS) Elastic Beanstalk</strong> for learning.
+                    </li>
+                    <li><strong>SQL</strong> and <strong>Stored Procedures</strong> for <strong>Sybase, Oracle,
+                        DB2</strong> and <strong>H2</strong> databases.
+                    </li>
+                    <li>Application deployment to <strong>Apache Tomcat, LCDS</strong> and <strong>BlazeDS</strong> in
+                        <strong>Clustered</strong> environment.
+                    </li>
+                    <li>Tools - <strong>Maven, Jenkins, GIT, SVN, Sonar, Nexus, NPM</strong>.</li>
+                    <li>Data formats - <strong>JSON, XML, BITMAP</strong> and <strong>CSV</strong>.</li>
+                    <li><strong>Test Driven Environment</strong> using <strong>Junit, MockMVC, SoapUI, Advanced REST
+                        Client</strong>.
+                    </li>
+                    <li>Working environments - <strong>MS Windows</strong> and <strong>POSIX</strong> compliant <strong>OS
+                        : Unix/Linux/MacOS</strong>.
+                    </li>
+                    <li><strong>Agile/Scrum</strong> and <strong>Waterfall</strong> development methodologies.</li>
+                    <li>Excellent <strong>team player</strong> and can work <strong>independently</strong> with minimum
+                        guidance.
+                    </li>
+                    <li>Strong <strong>written, oral</strong> and <strong>interpersonal communication</strong> skills.
+                    </li>
+                    <li>Experience <strong>training</strong> and <strong>mentoring</strong> junior and mid-level
+                        developers.
+                    </li>
+                    <li>Excellent <strong>debugging</strong> skills: troubleshoot and promptly fix application bugs.
+                    </li>
+                    <li><strong>Quick learner</strong> - adaptable to learn new skills and emerging technologies.</li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mk-skills">
+        <div class="row">
+            <div class="col-sm-12">
+                <high-chart options="chartOptions" width="100%">Skills Chart</high-chart>
+            </div>
+        </div>
+    </section>
+
+    <section class="mk-education">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title"><span>Education</span></h2>
+                <div class="spacer"></div>
+                <p ng-repeat="item in education"
+                   class="section-subtitle" style="font-weight: lighter;font-size: 2em;">{{item.name}} <br>
+                    <span style="font-weight: lighter;font-size: 1em;">{{item.degree}} - <strong>{{item.status}}:</strong> {{item.year}}</span></p>
+            </header>
+        </div>
+    </section>
+
+    <section id="" class="mk-experience">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title"><span>Experience</span></h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle"></p>
+            </header>
+            <div class="row">
+                <div class="col-md-3">
+                    <article class="experience" ng-repeat="item in experience">
+                        <header>
+                            <h3>{{item.position}}</h3>
+                            <p> {{item.company}} / {{item.from}} - {{item.to}} </p>
+                        </header>
+                        <p> {{item.project}}</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="#contact" class="mk-contact">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title"><span>Contact</span></h2>
+                <div class="spacer"></div>
+            </header>
+            <div class="row">
+                <div class="col-sm-12 contact-info">
+                    <h3>Contact Info</h3>
+                    <p><i class="fa fa-envelope-o"></i> <a href="mailto:margish@gmail.com">margish@gmail.com</a></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+</body>
+</html>
