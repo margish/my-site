@@ -1,6 +1,11 @@
 var mainApp = angular.module("myApp", []);
 
 mainApp.controller('mkController', function ($scope, $location, $anchorScroll) {
+
+    $scope.currentPosition = 'Full Stack Developer | Senior Java Developer';
+    $scope.mainMenuText = 'Margish';
+    $scope.headerText = 'MARGISH KOTADIYA';
+
     $scope.menuItems = [
         {
             name: 'home',
@@ -105,7 +110,7 @@ mainApp.controller('mkController', function ($scope, $location, $anchorScroll) {
             color: '#3368be'
         }, {
             name: 'Hibernate',
-            y: 65,
+            y: 70,
             color: '#3368be'
         }]
     };

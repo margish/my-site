@@ -27,7 +27,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.html" class="navbar-brand">Margish</a>
+                <a href="index.html" class="navbar-brand">{{mainMenuText}}</a>
             </div>
 
             <!-- Menu Items -->
@@ -46,8 +46,8 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="mk-header">
-                        <h1>MARGISH KOTADIYA</h1>
-                        <p>Full Stack Developer | Senior Java/J2EE Developer</p>
+                        <h1>{{headerText}}</h1>
+                        <p>{{currentPosition}}</p>
                         <div>
                             <a ng-repeat="item in socialLinks"
                                href="{{item.link}}"
@@ -67,7 +67,7 @@
             <header class="section-header">
                 <h2 class="section-title">Profile</h2>
                 <div class="spacer"></div>
-                <p class="section-subtitle">Sr. Full Stack Developer | Java/J2EE Developer</p>
+                <p class="section-subtitle">{{currentPosition}}</p>
             </header>
             <div class="row">
                 <div class="col-sm-12">
