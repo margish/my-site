@@ -25,7 +25,7 @@ mainApp.directive('highChart', function () {
                         title: '%'
                     },
                     xAxis: {
-                        categories: ['Java', 'SQL', 'Spring MVC', 'REST API', 'Java Script', 'Bootstrap', 'Angular', 'HTML', 'CSS', 'Hibernate'],
+                        categories: ['Java', 'SQL', 'Spring MVC', 'REST API', 'Java Script', 'React/Redux', 'HTML', 'AWS', 'CSS', 'Kubernetes'],
                         labels: {
                             style: {
                                 "fontSize": "16px",

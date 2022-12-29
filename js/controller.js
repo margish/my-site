@@ -2,7 +2,7 @@ var mainApp = angular.module("myApp", []);
 
 mainApp.controller('mkController', function ($scope, $location, $anchorScroll) {
 
-    $scope.currentPosition = 'Full Stack Developer | Senior Java Developer';
+    $scope.currentPosition = 'Senior Software Engineer | React | Java | AWS';
     $scope.mainMenuText = 'Margish';
     $scope.headerText = 'MARGISH KOTADIYA';
 
@@ -47,27 +47,9 @@ mainApp.controller('mkController', function ($scope, $location, $anchorScroll) {
         },
         {
             name: 'github',
-            link: 'https://github.com/mar915h',
+            link: 'https://github.com/margish',
             class: 'btn btn-round btn-clear btn-github',
             icon: 'fa fa-github'
-        },
-        {
-            name: 'twitter',
-            link: 'https://twitter.com/imargish',
-            class: 'btn btn-round btn-clear btn-twitter',
-            icon: 'fa fa-twitter'
-        },
-        {
-            name: 'facebook',
-            link: 'https://www.facebook.com/margish/',
-            class: 'btn btn-round btn-clear btn-facebook',
-            icon: 'fa fa-facebook'
-        },
-        {
-            name: 'google',
-            link: 'https://plus.google.com/u/0/+MargishKotadiya',
-            class: 'btn btn-round btn-clear btn-google',
-            icon: 'fa fa-google-plus'
         }
     ];
 
@@ -93,11 +75,7 @@ mainApp.controller('mkController', function ($scope, $location, $anchorScroll) {
             y: 90,
             color: '#3368be'
         }, {
-            name: 'Bootstrap',
-            y: 90,
-            color: '#3368be'
-        }, {
-            name: 'Angular',
+            name: 'React/Redux',
             y: 90,
             color: '#3368be'
         }, {
@@ -105,12 +83,16 @@ mainApp.controller('mkController', function ($scope, $location, $anchorScroll) {
             y: 85,
             color: '#3368be'
         }, {
+            name: 'AWS',
+            y: 80,
+            color: '#3368be'
+        }, {
             name: 'CSS',
             y: 75,
             color: '#3368be'
         }, {
-            name: 'Hibernate',
-            y: 70,
+            name: 'Kubernetes',
+            y: 60,
             color: '#3368be'
         }]
     };
@@ -129,25 +111,24 @@ mainApp.controller('mkController', function ($scope, $location, $anchorScroll) {
 
     $scope.experience = [
         {
+            position: 'Senior Software Engineer',
+            company: 'Guidewire Software',
+            project: 'InsuranceNow - Consumer Service Portal',
+            from: 'Nov 2017',
+            to: 'Current'
+        },{
             position: 'Senior Software Developer',
             company: 'Southern Company Services',
             project: 'Sr. Java/HTML5/Flex developer for Energy Management System',
             from: 'Sept 2011',
-            to: 'Current'
+            to: 'Nov 2017'
         },
         {
-            position: 'Lead Java/Flex Developer',
+            position: 'Java/Flex Developer',
             company: 'Deloitte Consulting, State of Illinois',
-            project: 'Lead for Child Care Management System UI Team',
+            project: 'Child Care Management System UI Team',
             from: 'Apr 2011',
             to: 'Sept 2011'
-        },
-        {
-            position: 'Software Developer',
-            company: 'AniEffects Media Works',
-            project: 'Software Developer for Corporate UI Development Team',
-            from: 'Mar 2008',
-            to: 'Dec 2008'
         },
         {
             position: 'Associate Technology L1',
